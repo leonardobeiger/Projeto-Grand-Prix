@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, #edf8ff, #dce7f9); /* Adicione as cores desejadas */
+    /* background-image: url('/img/Hospital-Sírio-Libanês-capa.jpg'); */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message {
+    background: linear-gradient(to left, #d9effe, #2980b9);
+    color: #000000;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    width: auto;
+    margin: 20 auto; /* Correção aqui: remova a segunda definição de margin */
+    border-radius: 8px;
+}
+
+.bar {
+    background-color: #2980b9; /* Adicione a cor desejada */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Adicionado para centralizar horizontalmente */
+    overflow: hidden;
+    color: #ffffff;
+    padding: 14px 0;
+    border-radius: 8px;
+    width: 100%;
+}
+
+
+.bar h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adicione valores conforme necessário */
+    margin: 10px; /* Para remover a margem padrão do h2 e garantir o alinhamento correto */
+}
+
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+}
+
+.nome,
+.email,
+.telefone,
+.nascimento,
+.descricao,
+.experiencia,
+.escolaridade,
+.motivacao,
+.disponibilidade {
+    margin-bottom: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.botao {
+    text-align: center;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4560a0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #4560a0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra um pouco mais pronunciada no hover */
+}
+
+@media (min-width: 768px) {
+    .parte-1,
+    .parte-2,
+    .parte-3,
+    .parte-4,
+    .parte-5 {
+        flex: 0 0 calc(50% - 10px);
+        margin-right: 20px;
+    }
+}
+
